@@ -187,7 +187,7 @@ Create the staging overlay and set the path to the staging dir inside the tenant
 
 ```sh
 cat << EOF | tee ./tenants/staging/dev-team-patch.yaml
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: dev-team
@@ -407,7 +407,7 @@ First we setup the reconciliation of custom resource definitions and their contr
 example we'll use [Kyverno](https://github.com/kyverno/kyverno):
 
 ```yaml
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: kyverno
@@ -427,7 +427,7 @@ Then we setup [cluster policies](./infrastructure/kyverno-policies/verify-git-re
 (Kyverno custom resources) to enforce a specific GitHub Organisation:
 
 ```yaml
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: kyverno-policies
@@ -448,7 +448,7 @@ With `dependsOn` we tell Flux to install Kyverno before deploying the cluster po
 And finally we setup the reconciliation for the tenants workloads with:
 
 ```yaml
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: tenants
