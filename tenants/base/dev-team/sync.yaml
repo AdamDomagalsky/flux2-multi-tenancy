@@ -8,6 +8,8 @@ spec:
   url: ssh://git@github.com/AdamDomagalsky/flux2-multi-tenancy.git
   ref:
     branch: dev-team
+  secretRef:
+    name: dev-team-auth
 
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1

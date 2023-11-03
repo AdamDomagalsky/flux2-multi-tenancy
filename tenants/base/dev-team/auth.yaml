@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: dev-team-auth
+    namespace: apps
+stringData:
+    identity: ENC[AES256_GCM,data:91jCToGwWfv8qF+V4ppeqpQQglmfHn5wH887V7jPYR/FfU07FLS5RAEtb4xwp5ogkMM+9QXQDuNu+qCUqULiF/kzRit5tIAmimTLF5mDCRkCkGPg4yMA2QuvXElseEt66zlD9raLgcmd9iY3J7ytt8u6tOAxNqajvTDlKuDOWZo44178cHUwuKLhRVFv7ASOczh6e9UE0yaTlrWuK6SqGA2KMOIXuH29kbQwWrMJtarGJgGS/zAY36K3Yc/ypVjYPeC+9Uf+s7ICKjdaevFRgotJkCSZ4N2RJdP3MgKPuiDNKEvS/M2t6l4BMNVSSxNnIy1IhN6C4wyqkKMjM8EdUghbwvDyk2OCNTAyux3jRPrkqzgLisE9u1MIy9jOzWbfFDdlOCBQ4t6JDm/U0t7X/61T,iv:7RMVF4O44GzEJSOFq6hcL2hnIr+jwihxPC/+EjDserY=,tag:LodnwF5DXQAVwspvwOlQOA==,type:str]
+    identity.pub: ENC[AES256_GCM,data:3G1Blp8F40VzXja4w27+kOHwUjByv/tEBWpJFEOaV2L32PYPavoM/qnJCqg5J+IjAfwcs/zW+ZIUkXQPtyk/KGK2OU76xN29zfIoQiImFq3i0gPbL0nmMH4gh9ozGFncCykXrJ7JRFoqfLYHid7dEsppFxR3Xg9PnjEanDEA2nKSsehJ/Dae/oWo2inI1gZkbqQt+inGcfgn4vqbtqdXqESMXfJCZS7RDIYqD1QREA3w69rIHBYvrNo8nwYid4/66VHXgZPPfLFFe5fFaw==,iv:AreP1V/ZsnR578pRT8+Ld/+IWYO2wmmjO/uf48eN8z8=,tag:LFggjYpIwo8hUC1jQ4PbwA==,type:str]
+    known_hosts: ENC[AES256_GCM,data:LKm4zVpbw+VRWXAevMi0sfMB858QOSJTpsluqXYxH1WtxMfFvKBkqOXBmUN25WUd3XwlNs9xMPn5rGhduMU0KunHSrXmRdJjFUGXW7AGG8KkEmFSuicLvPbI4GOZ2aF9X2YHxJJopU3/iWoYSERNrhifhB24tx2DNbWxSKSu9++9AM6HbOO9dB+XXHSeEqrDFAW9z3lern7u/BGzqdKQdv/fWRXveOWQ9pXW,iv:oR0Ge25CtSDKTTqDsQx584DWO08vLE/PagAO3nWvXwM=,tag:2zqojh5SoZ3slRXRBdd5Qg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2023-11-03T12:15:40Z"
+    mac: ENC[AES256_GCM,data:CuRFjIoHWL917Qq6st2M/D7eQYzR7VpNRYae5/aphXJ/qVIq69Q7qZ7CgLg+Kkesk5ZlGWpPsJu2CR+sUdMF6UMJszzH0WdOCrGVetrO7ie8KK6Mqy7w/3CrQxHaI42OgKDSL3zt8X2FsIWNkGRFKbS8r5adWQcjULWEk0bcf24=,iv:Oo6d0o80uJiMeXaa1f68/xjt8axLbZp3yY7HEdocKZI=,tag:pmt+xADcv0SmlbmGWPg2fw==,type:str]
+    pgp:
+        - created_at: "2023-11-03T12:15:40Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hF4DnvdEM7hn9v8SAQdAmCuzUwJ549nZsSkJCk06Zlt/+PBlyHixS3gqqfls0AQw
+            fVE2DD8wfA8gJ77KycwtrPWrJrFt4pqQ5nv2qKMPeS6GLMsUy+8ZGRYQu+DmQDGf
+            1GYBCQIQYyikhspXG9U74Pig+ph3NwhVWkgW5C717CKKY77OeLIF1vQoNofdnxdc
+            bmeaxPDs5qlN1NQ+4+D+xDC00KMfZAvH/50tDDF0OCz52YyoteREo7SUZSCnjpb7
+            t30COoU0/oc=
+            =/C3M
+            -----END PGP MESSAGE-----
+          fp: EFB41F17DE1945EE5A5324279F4F0218C939CA53
+    encrypted_regex: ^(data|stringData)$
+    version: 3.8.1
