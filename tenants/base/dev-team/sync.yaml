@@ -5,9 +5,10 @@ metadata:
   namespace: apps
 spec:
   interval: 1m
-  url: https://github.com/fluxcd/flux2-multi-tenancy
+  url: ssh://git@github.com/AdamDomagalsky/flux2-multi-tenancy.git
   ref:
     branch: dev-team
+
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
