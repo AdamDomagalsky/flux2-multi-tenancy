@@ -5,9 +5,9 @@ metadata:
   namespace: apps
 spec:
   interval: 1m
-  url: ssh://git@github.com/AdamDomagalsky/flux2-multi-tenancy.git
+  url: ssh://git@github.com/AdamDomagalsky/flux2-multi-tenancy
   ref:
-    branch: dev-team
+    branch: main
   secretRef:
     name: dev-team-auth
 
