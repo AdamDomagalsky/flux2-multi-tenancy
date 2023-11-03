@@ -5,7 +5,7 @@ metadata:
   namespace: apps
 spec:
   interval: 1m
-  url: https://github.com/AdamDomagalsky/flux2-multi-tenancy.git
+  url: https://github.com/AdamDomagalsky/flux2-multi-tenancy
   ref:
     branch: dev-team
 
