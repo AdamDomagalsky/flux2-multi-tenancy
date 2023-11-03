@@ -8,4 +8,7 @@ spec:
     spec:
       version: ">=1.0.0-alpha"
   values:
-    replicaCount: 1
+    replicaCount: 3
+    ui:
+      color: "#FF0000"
+      message: "parowa"
